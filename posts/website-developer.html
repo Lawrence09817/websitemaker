@@ -11,6 +11,10 @@
     <meta name="robots" content="index, follow">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -30,10 +34,15 @@
             margin-bottom: 25px;
             color: #66d9ff;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back:hover {
+            text-decoration: underline;
         }
 
         h1 {
-            font-size: 42px;
+            font-size: clamp(32px, 6vw, 52px);
             line-height: 1.15;
             margin-bottom: 15px;
         }
@@ -41,17 +50,19 @@
         .subtitle {
             font-size: 20px;
             color: #cbd5ff;
+            max-width: 800px;
         }
 
         .hero {
             width: 100%;
+            height: auto;
             border-radius: 20px;
             margin: 25px 0;
             display: block;
         }
 
         .content {
-            background: rgba(255,255,255,0.06);
+            background: rgba(255, 255, 255, 0.06);
             padding: 25px;
             border-radius: 18px;
         }
@@ -68,9 +79,13 @@
         }
 
         .feature {
-            background: rgba(255,255,255,0.08);
+            background: rgba(255, 255, 255, 0.08);
             padding: 20px;
             border-radius: 15px;
+        }
+
+        .feature h3 {
+            margin-top: 0;
         }
 
         .cta {
@@ -83,6 +98,10 @@
 
         .cta h2 {
             color: white;
+        }
+
+        .cta p {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -100,9 +119,10 @@
         designed to help your business stand out online.
     </p>
 
+    <!-- Website Developer Featured Image -->
     <img
         class="hero"
-        src="../images/website-developer.png"
+        src="../file_00000000db548211a028af23b4ad4328.png"
         alt="Professional Website Developer"
     >
 
@@ -163,12 +183,14 @@
         </p>
 
         <div class="cta">
+
             <h2>Let's Build Something Amazing Together! 🚀</h2>
 
             <p>
                 Have an idea for a website?
                 Let's turn your vision into reality.
             </p>
+
         </div>
 
     </div>
