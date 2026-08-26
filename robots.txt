@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lauretawebworks.netlify.app/sitemap.xml
